@@ -1,0 +1,45 @@
+.content{
+    width:60%;
+    float: left;
+    padding: 0 0 0 30px;
+    background-color: #e0c68b;
+    height: 100%;
+}
+.sidebar{
+    width: 40%;
+    float: right;
+    padding: 10px;
+    background-color: #bdc988;
+    height: 100%;
+}
+h1{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+body{
+    color: black;
+    background-color:#e0c68b ;
+}
+#date{
+    color: green;
+    font-size: 20px;
+    font-style: italic;
+}
+
+a{
+    color:red;
+}
+
+#ch{
+    color: darkred;
+    font-size: 30px;
+    font-style: italic;
+    border-bottom: 2px solid rgb(9, 15, 61);
+}
+
+#pcount{
+    font-size: 40px;
+    color: yellow;
+    font-weight: bold;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    {%extends 'cbvfinalapp/base.html'%}
+        {%block body_block%}
+         <h1>Beer Information Dash Board</h1>
+            <table border="2">
+                <thead>
+                    <th>Beer Name</th>
+                    <th> Details </th>
+                    <th> Update </th>
+                    <th> Delete </th>
+                </thead>
+                {%for beer in beer_list%}
+                    <tr>
+                        <td>{{beer.name|title}}</td>
+                        <td> <a href="/{{beer.id}}">Detail</a></td>
+                        <td> <a href="/update/{{beer.id}}">Update</a></td>
+                        <td> <a href="/delete/{{beer.id}}">Delete</a></td>
+                    </tr>
+                {%endfor%}
+            </table><br><br><br>
+            <a href="/create" class="btn btn-lg btn-primary">Do you want to insert new beer</a>
+        {%endblock%}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{%load blog_tags %}
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/blog.css'%}">
+    <title>{%block title_block%}{%endblock%}</title>
+</head>
+<body>
+    <div class="content">
+       {%block content%}{%endblock%}
+    </div>
+    <div class="sidebar">
+        <h2>AMOL's Blog</h2>
+        <p>The total number of published posts upto today: <span id='pcount'> {%my_tag%} </span></p>
+        <h3>Latest Posts:</h3>{%show_latest_posts 100%}
+        <h3>Most Commented Posts:</h3>
+        {%get_most_commented_posts as most_commented_posts %}
+        <ul>
+            {%for post in most_commented_posts %}
+            <li><a href="{{post.get_absolute_url}}">{{post.title}}</a></li>
+            {%endfor%}
+        </ul>
+    </div>  
+</body>
+</html>

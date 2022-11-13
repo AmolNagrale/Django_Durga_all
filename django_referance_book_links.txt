@@ -1,0 +1,5 @@
+Django Authontication links
+
+https://simpleisbetterthancomplex.com/
+https://wsvincent.com/
+

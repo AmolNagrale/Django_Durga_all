@@ -1,0 +1,10 @@
+<div class="paginator">
+    {% if page.has_previous%}
+        <a href="?page={{page.previous_page_number}}">previous</a>
+    {%endif%}
+    <span>page {{page.number}} of {{page.paginator.num_pages}}</span>&nbsp;
+    {% if page.has_next%}
+        <a href="?page={{page.next_page_number}}">Next</a> <!-- we didn't need to /url because we have already in home page that is why we have take ?mark-->
+        
+     {%endif%}
+</div>

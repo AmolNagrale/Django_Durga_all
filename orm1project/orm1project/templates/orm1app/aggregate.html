@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{%extends 'orm1app/base.html'%}
+
+{%block body_block%}
+ <h1>Employee Aggregate Information !!!</h1>
+ <ul>
+     <li>Average Salary:{{avg}}</li>
+     <li>Max Salary:{{max}}</li>
+     <li>Min Salary:{{min}}</li>
+     <li>Total Salary:{{sum}}</li>
+     <li>Number of employees:{{count}}</li>
+ </ul>
+{%endblock%}

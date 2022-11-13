@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{%static 'css/demo1.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{head_msg}}</h1> <hr>
+    <ul>
+        <li>{{msg1}}</li>
+        <li>{{msg2}}</li>
+        <li>{{msg3}}</li>
+
+    </ul>
+    <img src="{% static "images/images1.jfif" %}" alt="">
+    <img src="{% static "images/images2.jfif" %}" alt="">
+    <img src="{% static "images/images3.jfif" %}" alt="">
+    <img src="{% static "images/images4.jfif" %}" alt="">
+</body>
+</html>

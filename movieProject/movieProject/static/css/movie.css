@@ -1,0 +1,43 @@
+body{
+     background: url(https://webneel.com/wallpaper/sites/default/files/images/04-2013/tropical-beach-wallpaper.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.container .jumbotran{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background: orange;
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+    height: 250px;
+
+
+}
+.buttons{
+    margin: 20px;
+}
+
+table, tr,td,thead,th{
+    border: 2px solid white;
+    font-size: 30px;
+    color: white;
+    background: red;
+    margin: auto;
+}
+
+.containerform{
+    border: 2px solid orange;
+}
+
+#f{
+    border: 5px solid orange;
+}
+
+h1{
+    text-align: center;
+}

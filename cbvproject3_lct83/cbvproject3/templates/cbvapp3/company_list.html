@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends 'cbvapp3/base.html'%}
+    {%block body_block%}
+        <h1>List of All Companies</h1> <hr>
+        {% for company in company_list%}
+            <h2> <a href="/{{company.id}}">{{company.name}}</a></h2>
+        {%endfor%}
+        <a href="/create" class="btn btn-lg btn-primary">Add New Company Information</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    {%endblock%}

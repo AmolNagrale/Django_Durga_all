@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends 'cbvapp/base.html'%}
+{%block body_block%}
+    <h1> {{object.title}}Book Information</h1> <hr><hr>
+        <h2>Book Title :{{object.title}}</h2>
+        <h2>Book Author :{{object.author}}</h2>
+        <h2>Number of pages :{{object.pages}}</h2>
+        <h2>Book price :{{object.price}}</h2>    
+{%endblock%}

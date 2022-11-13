@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{%extends 'crudfbvApp/base.html'%}
+{%block body_block%}
+    
+    <h1>Employee Data Insersion Form</h1><hr>
+      <form method="POST">
+        {{form.as_p}}       
+        {%csrf_token%}
+      <input type="submit" class="btn btn-primary btn-lg" value="Insert Record">
+     </form>
+    
+{%endblock%}
